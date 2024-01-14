@@ -28,8 +28,8 @@ table will save follwing fields
 API EndPoints.
 
 - GET: http://localhost:9090/api/explorer
-- DELETE: http://localhost:9090/api/explorer/{id}
-- POST: http://localhost:9090/api/explorer/{id}
+- DELETE: http://localhost:9090/api/explorer/items/{id}
+- POST: http://localhost:9090/api/explorer/items
 
 POST BODY
 	
@@ -39,9 +39,6 @@ POST BODY
 	  "parentId" : 1
 	}
 		
-
-	Post API Body
-
 Solution: 
 
 	Database Used: H2
@@ -52,5 +49,4 @@ Solution:
 
 Steps to run Jar:
 
-java jar "# spring-boot-rest-api-explorer" 
-"# spring-boot-rest-api-explorer" 
+java -jar target\spring-boot-file-explorer-api-0.0.1-SNAPSHOT.jar
